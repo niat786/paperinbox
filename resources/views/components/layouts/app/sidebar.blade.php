@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         @include('partials.head')
+               @stack('styles')
     </head>
     <body class="min-h-screen bg-white dark:bg-zinc-800">
         <flux:sidebar sticky stashable class="border-e border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
@@ -15,17 +16,45 @@
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
                 </flux:navlist.group>
+            </flux:navlist> 
+
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Email Marketing')" class="grid">
+                    <flux:navlist.item icon="send" :href="route('send-emails')" :current="request()->routeIs('send-emails')" wire:navigate>{{ __('Send emails single/bulk') }}</flux:navlist.item>
+                    <flux:navlist.item icon="layout-template" :href="route('email-templates')" :current="request()->routeIs('email-templates')" wire:navigate>{{ __('Email templates') }}</flux:navlist.item>
+                </flux:navlist.group>
             </flux:navlist>
+
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Temporary Emails')" class="grid">
+                    <flux:navlist.item icon="paperclip" :href="route('temp-emails')" :current="request()->routeIs('temp-emails')" wire:navigate>{{ __('Temporary Emails') }}</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
+
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Email Tools')" class="grid">
+                    <flux:navlist.item icon="at-sign" :href="route('validate-syntax')" :current="request()->routeIs('validate-syntax')" wire:navigate>{{ __('Email Syntax Checker') }}</flux:navlist.item>
+                    <flux:navlist.item icon="briefcase" :href="route('fake-email-address')" :current="request()->routeIs('fake-email-address')" wire:navigate>{{ __('Job-Based Email Generator') }}</flux:navlist.item>
+                    <flux:navlist.item icon="inbox" :href="route('inbox-status')" :current="request()->routeIs('inbox-status')" wire:navigate>{{ __('Inbox status Checker') }}</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
+
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Your files')" class="grid">
+                    <flux:navlist.item icon="monitor-down" :href="route('user-files')" :current="request()->routeIs('user-files')" wire:navigate>{{ __('Files') }}</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
+
 
             <flux:spacer />
 
             <flux:navlist variant="outline">
-                <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('Repository') }}
+                <flux:navlist.item icon="folder-git-2" href="#">
+                {{ __('About') }}
                 </flux:navlist.item>
 
-                <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
-                {{ __('Documentation') }}
+                <flux:navlist.item icon="book-open-text" href="#">
+                {{ __('Contact') }}
                 </flux:navlist.item>
             </flux:navlist>
 
@@ -128,5 +157,6 @@
         {{ $slot }}
 
         @fluxScripts
+               @stack('scripts')
     </body>
 </html>
