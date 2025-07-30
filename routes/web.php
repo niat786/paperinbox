@@ -6,7 +6,6 @@ use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    dd(env('API_URL'), config('app.url'));
     return view('welcome');
 })->name('home');
 
