@@ -1,14 +1,14 @@
 <x-layouts.app :title="__('Dashboard')">
 <!-- Main Content -->
-    <section class="px-6 py-8 max-w-7xl mx-auto">
+    <section class="md:px-6 py-8 max-w-7xl mx-auto">
         <!-- Welcome Banner -->
         <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl p-8 mb-8 text-white">
-            <div class="flex items-center justify-between">
+            <div class="flex flex-col md:flex-row my-5 md:my-0 items-center justify-between">
                 <div>
                     <h2 class="text-3xl font-bold mb-2">Welcome back, Sarah!</h2>
                     <p class="text-blue-100 text-lg">Ready to boost your email marketing campaigns today?</p>
                 </div>
-                <div class="flex space-x-8">
+                <div class="flex flex-col my-3 md:my-0 md:flex-row md:space-x-8 space-y-5 md:space-y-0">
                     <div class="text-center">
                         <div class="text-3xl font-bold">2,847</div>
                         <div class="text-blue-100 text-sm">Emails Sent</div>
@@ -24,7 +24,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Email Marketing Section -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-gray-900 mb-6 dark:text-gray-300">Email Marketing</h3>
