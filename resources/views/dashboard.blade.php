@@ -35,17 +35,15 @@
                             <flux:icon.bolt />
                         </div>
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 dark:text-gray-200 dark:text-gray-200">Send Emails</h4>
-                            <p class="text-sm text-gray-600 dark:text-gray-200">Single or bulk sending</p>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-zinc-200">Send Emails</h4>
+                            <p class="text-sm text-gray-600 dark:text-zinc-300">Single or bulk sending</p>
                         </div>
                     </div>
                     <div class="space-y-3">
                         <p class="text-sm dark:text-zinc-300">
                             Compose and deliver emails either one-by-one or in bulk. Upload a list (e.g., CSV) for mass send, personalize each message with tokens, schedule delivery, and automatically handle retries or bounces to maximize deliverability.
                         </p>
-                        <flux:button variant="primary" color="blue">Send Single Email</flux:button>
-                        <flux:button variant="primary" color="indigo">Bulk Email Campaign</flux:button>
-
+                        <flux:button href="{{ route('send-emails') }}" variant="primary" color="blue">Send Emails</flux:button>
                         
                     </div>
                 </div>
@@ -67,7 +65,7 @@
                     </div>
                    <p class="py-3 text-sm dark:text-zinc-300">
 Choose from our collection of professionally designed email templates that convert and engage your audience</p>
-                        <flux:button variant="primary" color="blue">Browse Templates</flux:button>
+                        <flux:button href="{{ route('email-templates') }}" variant="primary" color="blue">Browse Templates</flux:button>
 
                 </div>
 
@@ -85,7 +83,7 @@ Choose from our collection of professionally designed email templates that conve
                     <div class="space-y-2 mb-4">
                         <p class="text-sm dark:text-zinc-300">Instantly create a short-lived email address to receive verification codes, test messages, or avoid spam. Messages appear in a temporary inbox and auto-expire.</p>
                     </div>
-                  <flux:button variant="primary" color="blue">Create New</flux:button>
+                  <flux:button href="{{ route('temp-emails') }}" variant="primary" color="blue">Create New</flux:button>
 
                 </div>
             </div>
@@ -113,7 +111,7 @@ Choose from our collection of professionally designed email templates that conve
                         <div class="text-2xl font-bold text-gray-900 dark:text-zinc-200">100%</div>
                         <div class="text-sm text-gray-600 dark:text-zinc-300">Accuracy rate</div>
                     </div>
-                  <flux:button variant="primary" color="blue">Check Email Syntax</flux:button>
+                  <flux:button href="{{ route('validate-syntax') }}" variant="primary" color="blue">Check Email Syntax</flux:button>
                     
                 </div>
 
@@ -133,7 +131,7 @@ Choose from our collection of professionally designed email templates that conve
                         <div class="text-sm text-gray-600 dark:text-zinc-300">Templates generated</div>
                     </div>
                     
-                  <flux:button variant="primary" color="blue">Generate Email</flux:button>
+                  <flux:button href="{{ route('fake-email-address') }}" variant="primary" color="blue">Generate Email</flux:button>
 
                 </div>
 
@@ -156,7 +154,7 @@ Choose from our collection of professionally designed email templates that conve
                         <div class="text-sm text-gray-600 dark:text-zinc-300">All systems operational</div>
                     </div>
                    
-                  <flux:button variant="primary" color="blue">Check Status</flux:button>
+                  <flux:button href="{{ route('inbox-status') }}" variant="primary" color="blue">Check Status</flux:button>
 
                 </div>
             </div>
@@ -166,7 +164,7 @@ Choose from our collection of professionally designed email templates that conve
         <section>
             <div class="flex items-center justify-between mb-6">
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-300">Your Files</h3>
-                <flux:button variant="primary" color="zinc">Upload File</flux:button>
+                <flux:button href="{{ route('user-files') }}" variant="primary" color="zinc">Upload File</flux:button>
             </div>
             <div class="bg-white dark:bg-zinc-700 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-zinc-600">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -204,7 +202,7 @@ Choose from our collection of professionally designed email templates that conve
                 </div>
                 
                 <div class="mt-6 text-center">
-                    <flux:button size="xs">View All Files</flux:button>
+                    <flux:button href="{{ route('user-files') }}" size="xs">View All Files</flux:button>
                 </div>
             </div>
         </section>
