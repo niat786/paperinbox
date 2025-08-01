@@ -292,62 +292,7 @@
         </div>
     </main>
 
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-['Pacifico'] text-primary mb-4">PaperInbox.io</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Professional email tools for validation, temporary emails, templates, and more. Secure, reliable, and privacy-focused.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Email Validator</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Temporary Email</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Email Templates</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Fake Email Generator</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Disclaimer</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li class="flex items-center space-x-2">
-                            <div class="w-4 h-4 flex items-center justify-center">
-                                <i class="ri-mail-line"></i>
-                            </div>
-                            <span>support@paperinbox.io</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <div class="w-4 h-4 flex items-center justify-center">
-                                <i class="ri-customer-service-line"></i>
-                            </div>
-                            <span>Help Center</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-sm text-gray-400">
-                    © 2025 PaperInbox.io. All rights reserved. Last updated: January 2025
-                </p>
-            </div>
-        </div>
-    </footer>
+      <x-footer />
 
     <script id="mobile-menu-toggle">
         document.addEventListener('DOMContentLoaded', function() {

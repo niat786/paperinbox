@@ -413,61 +413,7 @@
         </div>
     </main>
 
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-['Pacifico'] mb-4">logo</h3>
-                    <p class="text-gray-400 mb-4">The ultimate email toolkit for modern businesses</p>
-                    <div class="flex space-x-4">
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-twitter-line text-gray-400 hover:text-white cursor-pointer"></i>
-                        </div>
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-linkedin-line text-gray-400 hover:text-white cursor-pointer"></i>
-                        </div>
-                        <div class="w-8 h-8 flex items-center justify-center">
-                            <i class="ri-github-line text-gray-400 hover:text-white cursor-pointer"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Product</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Support</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Ultimate Email Tool. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+      <x-footer />
 
     <script id="billing-toggle-script">
         document.addEventListener('DOMContentLoaded', function() {

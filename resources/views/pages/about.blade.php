@@ -378,74 +378,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="lg:col-span-1">
-                    <h3 class="text-2xl font-['Pacifico'] text-primary mb-4">logo</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">
-                        Professional email solutions that empower businesses to communicate effectively, validate addresses, and optimize their email strategies.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-                            <i class="ri-twitter-fill"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
-                            <i class="ri-github-fill"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Services</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Email Validator</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Email Sending</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Temp Email</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Email Templates</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fake Email Generator</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Company</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Press</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Stay updated with our latest features and email tips.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Enter your email" 
-                               class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary text-white">
-                        <button class="bg-primary px-6 py-2 rounded-r-lg hover:bg-blue-600 transition-colors whitespace-nowrap">
-                            <i class="ri-send-plane-line"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 text-sm">
-                    © 2025 EmailPro Solutions. All rights reserved.
-                </p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+       <x-footer />
 
     <script id="mobile-menu-script">
         document.addEventListener('DOMContentLoaded', function() {
