@@ -40,25 +40,7 @@
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-['Pacifico'] text-primary">logo</h1>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">Features</a>
-                    <a href="#" class="text-primary font-medium">Pricing</a>
-                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">Documentation</a>
-                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">Support</a>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <button class="text-gray-600 hover:text-primary transition-colors">Sign In</button>
-                    <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-blue-600 transition-colors whitespace-nowrap">Get Started</button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <x-menu />
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center mb-16">

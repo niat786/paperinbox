@@ -44,48 +44,7 @@
 </head>
 <body class="bg-white">
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-['Pacifico'] text-primary">logo</h1>
-                </div>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Features</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Pricing</a>
-                    <a href="#" class="text-primary font-medium">About Us</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-                </nav>
-                
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Sign In</a>
-                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-blue-600 transition-colors whitespace-nowrap">
-                        Get Started
-                    </button>
-                </div>
-                
-                <button class="md:hidden w-8 h-8 flex items-center justify-center" id="mobile-menu-btn">
-                    <i class="ri-menu-line text-xl"></i>
-                </button>
-            </div>
-            
-            <div class="md:hidden hidden" id="mobile-menu">
-                <div class="py-4 space-y-4">
-                    <a href="#" class="block text-gray-700 hover:text-primary transition-colors">Features</a>
-                    <a href="#" class="block text-gray-700 hover:text-primary transition-colors">Pricing</a>
-                    <a href="#" class="block text-primary font-medium">About Us</a>
-                    <a href="#" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
-                    <div class="pt-4 space-y-2">
-                        <a href="#" class="block text-gray-700 hover:text-primary transition-colors">Sign In</a>
-                        <button class="w-full bg-primary text-white px-6 py-2 !rounded-button hover:bg-blue-600 transition-colors whitespace-nowrap">
-                            Get Started
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <x-menu />
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-32 overflow-hidden">

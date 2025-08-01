@@ -40,39 +40,7 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="text-2xl font-['Pacifico'] text-primary">PaperInbox.io</h1>
-                </div>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Email Validator</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Temp Mail</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Templates</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-                </nav>
-                
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="w-8 h-8 flex items-center justify-center">
-                        <i class="ri-menu-line text-xl"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <div id="mobile-menu" class="md:hidden hidden py-4 border-t">
-                <div class="flex flex-col space-y-4">
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Email Validator</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Temp Mail</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Templates</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-                </div>
-            </div>
-        </div>
-    </header>
+     <x-menu />
 
     <div class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
