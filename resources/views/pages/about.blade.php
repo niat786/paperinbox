@@ -90,7 +90,7 @@
                     <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                     <div class="space-y-6 text-gray-600">
                         <p class="text-lg leading-relaxed">
-                            Founded in 2018, PaperInbox Solutions emerged from a simple observation: email communication was becoming increasingly complex while remaining fundamentally important to business success. Our founders, experienced software engineers and communication specialists, recognized the need for comprehensive, reliable email tools.
+                            Founded in 2018, PaperInbox emerged from a simple observation: email communication was becoming increasingly complex while remaining fundamentally important to business success. Our founders, experienced software engineers and communication specialists, recognized the need for comprehensive, reliable email tools.
                         </p>
                         <p class="text-lg leading-relaxed">
                             What started as a small team of five passionate developers has grown into a trusted platform serving over 500,000 users worldwide. We've processed millions of email validations, delivered countless messages, and helped businesses maintain clean, effective communication channels.
@@ -219,7 +219,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    The passionate professionals behind PaperInbox Solutions, dedicated to revolutionizing email communication
+                    The passionate professionals behind PaperInbox, dedicated to revolutionizing email communication
                 </p>
             </div>
             
@@ -364,7 +364,7 @@
                 Ready to Transform Your Email Communication?
             </h2>
             <p class="text-xl text-blue-100 mb-8 leading-relaxed">
-                Join over 500,000 users who trust PaperInbox Solutions for their email needs. Start your free trial today and experience the difference professional email tools can make.
+                Join over 500,000 users who trust PaperInbox for their email needs. Start your free trial today and experience the difference professional email tools can make.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <button class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-gray-100 transition-colors font-semibold whitespace-nowrap">
