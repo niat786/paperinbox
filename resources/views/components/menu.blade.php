@@ -1,6 +1,8 @@
   <header class="bg-white/40 backdrop-blur-lg border-b border-white/20 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="/" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+            <a href="/" class="text-2xl font-['Pacifico'] text-primary">
+            <img src="{{ asset('paperinbox-logo.webp') }}" class="h-10 w-auto" />
+            </a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ route('about-us') }}" class="text-gray-600 hover:text-primary transition-colors">About</a>
                 <a href="{{ route('disclaimer') }}" class="text-gray-600 hover:text-primary transition-colors">Disclaimer</a>
