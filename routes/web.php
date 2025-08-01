@@ -52,3 +52,4 @@ Route::get('/download-fake-emails', function () {
 })->name('test-emails-paperinbox.download');
 
 require __DIR__.'/auth.php';
+require __DIR__.'/pages.php';

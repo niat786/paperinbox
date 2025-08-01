@@ -31,7 +31,7 @@
                 <!-- Send Emails Card -->
                 <div class="bg-white dark:bg-zinc-700 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-zinc-600 hover:shadow-md transition-shadow">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-200 dark:bg-rose-600  rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-rose-200 dark:bg-rose-600  rounded-lg flex items-center justify-center mr-4">
                             <flux:icon.bolt />
                         </div>
                         <div>
@@ -72,7 +72,7 @@ Choose from our collection of professionally designed email templates that conve
                 <!-- Temporary Emails Card -->
                 <div class="bg-white dark:bg-zinc-700 dark:text-gray-300 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-zinc-600 hover:shadow-md transition-shadow">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-200 dark:bg-orange-600 rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-orange-200 dark:bg-orange-600 rounded-lg flex items-center justify-center mr-4">
                             <flux:icon.bolt />
                         </div>
                         <div>
@@ -118,7 +118,7 @@ Choose from our collection of professionally designed email templates that conve
                 <!-- Job-Based Email Generator -->
                 <div class="bg-white dark:bg-zinc-700 dark:text-gray-300 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-zinc-600 hover:shadow-md transition-shadow">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-200 dark:bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
+                        <div class="w-12 h-12 bg-indigo-200 dark:bg-indigo-600 rounded-lg flex items-center justify-center mr-4">
                             <flux:icon.bolt />
                         </div>
                         <div>
@@ -139,7 +139,7 @@ Choose from our collection of professionally designed email templates that conve
                 <div class="bg-white dark:bg-zinc-700 dark:text-gray-300 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-zinc-600 hover:shadow-md transition-shadow">
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-blue-200 dark:bg-emerald-600 rounded-lg flex items-center justify-center mr-4">
+                            <div class="w-12 h-12 bg-emerald-200 dark:bg-emerald-600 rounded-lg flex items-center justify-center mr-4">
                             <flux:icon.bolt />
                         </div>
                             <div>
