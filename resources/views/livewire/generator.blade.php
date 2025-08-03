@@ -23,19 +23,19 @@
             </div>
 
             <!-- Single Email Generation -->
-            @if ($mode==0)
+            @if ($mode == 0)
                 <div>
                     <button wire:click="generateSingleEmail" wire:loading.attr="disabled"
                         class="w-full bg-secondary text-white py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors mb-4">
-                        
+
 
                         <!-- Show when not loading -->
-    <span wire:loading.remove wire:target="generateSingleEmail">Generate Random Email</span>
+                        <span wire:loading.remove wire:target="generateSingleEmail">Generate Random Email</span>
 
-    <!-- Show loader when loading -->
-    <span wire:loading wire:target="generateSingleEmail" class="text-white animate-spin">
-        <i class="ri-loader-line size-7"></i>
-    </span>
+                        <!-- Show loader when loading -->
+                        <span wire:loading wire:target="generateSingleEmail" class="text-white animate-spin">
+                            <i class="ri-loader-line size-7"></i>
+                        </span>
 
                     </button>
                 </div>
@@ -45,30 +45,30 @@
             @if ($mode == 1)
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-1">Number of Emails</label>
-                   
+
                     <input type="number" wire:model="bulkCount" min="1" max="100"
                         class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
                 </div>
                 <button wire:click="generateBulkEmails" wire:loading.attr="disabled"
                     class="w-full bg-secondary text-white py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors mb-4">
-                    
-                                     <!-- Show when not loading -->
-    <span wire:loading.remove wire:target="generateBulkEmails">Generate Random Emails</span>
 
-    <!-- Show loader when loading -->
-    <span wire:loading wire:target="generateBulkEmails" class="text-white animate-spin">
-        <i class="ri-loader-line size-7"></i>
-    </span>
+                    <!-- Show when not loading -->
+                    <span wire:loading.remove wire:target="generateBulkEmails">Generate Random Emails</span>
+
+                    <!-- Show loader when loading -->
+                    <span wire:loading wire:target="generateBulkEmails" class="text-white animate-spin">
+                        <i class="ri-loader-line size-7"></i>
+                    </span>
                 </button>
             @endif
         </div>
 
         @if (!empty($generatedEmails))
-            <div class="bg-gray-50 rounded-lg p-4 mb-4">
+            <div class="bg-gray-50 rounded-lg p-4 mb-4 max-h-[50vh] overflow-y-auto">
                 <h4 class="font-medium mb-3">Generated Email(s)</h4>
-                 @if($bulkMaxMessage)
-                        <p class="text-sm text-green-600 my-3">{{$bulkMaxMessage}}</p>
-                    @endif
+                @if ($bulkMaxMessage)
+                    <p class="text-sm text-green-600 my-3">{{ $bulkMaxMessage }}</p>
+                @endif
                 <div class="space-y-3">
                     @foreach ($generatedEmails as $email)
                         <div class="flex items-center justify-between bg-white p-3 rounded">
@@ -78,8 +78,7 @@
                             </div>
                             <button
                                 class="text-gray-500 hover:text-gray-700 w-8 h-8 flex items-center justify-center copy-email-btn"
-                                data-email="{{ $email['email'] }}"
-                                type="button">
+                                data-email="{{ $email['email'] }}" type="button">
                                 <i class="ri-clipboard-line"></i>
                             </button>
                         </div>
@@ -99,24 +98,24 @@
 </div>
 
 @push('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.addEventListener('click', function (e) {
-            const btn = e.target.closest('.copy-email-btn');
-            if (btn) {
-                const email = btn.getAttribute('data-email');
-                navigator.clipboard.writeText(email)
-                    .then(() => {
-                        btn.classList.add('text-green-500');
-                        setTimeout(() => {
-                            btn.classList.remove('text-green-500');
-                        }, 1000);
-                    })
-                    .catch(() => {
-                        alert('Failed to copy email.');
-                    });
-            }
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('click', function(e) {
+                const btn = e.target.closest('.copy-email-btn');
+                if (btn) {
+                    const email = btn.getAttribute('data-email');
+                    navigator.clipboard.writeText(email)
+                        .then(() => {
+                            btn.classList.add('text-green-500');
+                            setTimeout(() => {
+                                btn.classList.remove('text-green-500');
+                            }, 1000);
+                        })
+                        .catch(() => {
+                            alert('Failed to copy email.');
+                        });
+                }
+            });
         });
-    });
-</script>
+    </script>
 @endpush

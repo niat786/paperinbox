@@ -10,7 +10,7 @@ class Generator extends Component
 {
     public $mode = 0;
 
-    public $bulkCount = 5;
+    public $bulkCount = 100;
 
     public $generatedEmails = [];
 
@@ -36,9 +36,9 @@ class Generator extends Component
         $this->loading = true;
         $emails = [];
         $this->reset('bulkMaxMessage');
-        if ($this->bulkCount >= 11) {
-            $this->bulkCount = 10;
-            $this->bulkMaxMessage = 'Demo limit: Only the first 10 generated emails are displayed below.';
+        if ($this->bulkCount >= 100) {
+            $this->bulkCount = 100;
+            $this->bulkMaxMessage = 'Demo limit: Only the first 100 generated emails are displayed below.';
         }
         for ($i = 0; $i < $this->bulkCount; $i++) {
             $emails[] = $this->fetchEmail();
@@ -48,27 +48,34 @@ class Generator extends Component
 
     }
 
-    private function fetchEmail()
-    {
+    private function fetchEmail(): array
+{
+    $url = rtrim(env('APP_URL', config('app.url')), '/') . '/api/fake-email';
+    $response = Http::timeout(5)->get($url);
 
-        // You can replace this with your actual API call
-        $url = env('API_URL').'/generate/fake-email';
-        $response = Http::get($url);
+    if ($response->successful()) {
+        $data = $response->json();
 
-        if ($response->successful()) {
-            $user = $response->json();
+        $email = $data['email'] ?? 'unknown@example.com';
+        $jobTitle = $data['job_title'] ?? 'Unknown';
 
-            $email = $user[0]['email'];
-            $jobTitle = $user[0]['job_title'];
-
-            return [
-                'email' => $email,
-                'title' => $jobTitle,
-            ];
-        }
-
-        return ['email' => 'unknown@example.com', 'title' => 'Unknown'];
+        return [
+            'email' => $email,
+            'title' => $jobTitle,
+        ];
     }
+
+    // optional: log failure for debugging
+    \Log::warning('Failed to fetch fake email', [
+        'status' => $response->status(),
+        'body' => $response->body(),
+    ]);
+
+    return [
+        'email' => 'unknown@example.com',
+        'title' => 'Unknown',
+    ];
+}
 
     public function downloadCsv(): StreamedResponse
     {
