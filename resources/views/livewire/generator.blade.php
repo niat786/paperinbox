@@ -94,6 +94,7 @@
                 </form>
             </div>
         @endif
+         <p class="text-center text-sm treaking-wider"><a href="{{ route('login') }}" class="text-emerald-600">Login</a> for more advance tools</p>
     </div>
 </div>
 

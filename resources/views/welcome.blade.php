@@ -353,6 +353,7 @@
                 </div>
             </div>
         </div>
+        <p>Login for more advance tools</p>
     </section>
     <section class="py-16 max-w-7xl mx-auto ">
         <div class="container mx-auto px-4">
