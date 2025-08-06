@@ -37,6 +37,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     @livewireStyles
+    @verbatim
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -137,6 +138,7 @@
   ]
 }
 </script>
+@endverbatim
 
     <script>
         tailwind.config = {
