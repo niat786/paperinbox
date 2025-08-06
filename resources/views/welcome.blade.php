@@ -4,15 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Toolkit</title>
+    <title>Pro Email Validator, Generator, Temp mail & AI Toolkit</title>
+
+
+    <meta name="description"
+        content="Access a complete suite of professional email tools. Validate, generate, temp mail and analyze emails with our powerful, real-time AI toolkit. Start with a free trial today.">
+
+    <meta name="keywords"
+        content="email tools, email toolkit, email validator, email generator, email verification, bulk email validation, smtp check, free email tools, technical email check, AI email content filters">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title"
+        content="Professional Email Toolkit: Validator, Generator Inbox Status & AI Technical Tools">
+    <meta property="og:description"
+        content="A comprehensive suite of tools for real-time email validation, generation, and technical analysis. Enhance your email operations with powerful, easy-to-use solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ route('home') }}">
+    <meta property="og:image" content="{{ asset('images/paper-inbox-email-toolkit.webp') }}">
+    <meta property="og:site_name" content="paperinbox">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Professional Email Toolkit: Validator, Generator Inbox Status & AI Technical Tools">
+    <meta name="twitter:description"
+        content="A comprehensive suite of tools for real-time email validation, generation, and technical analysis. Enhance your email operations with powerful, easy-to-use solutions.">
+    <meta name="twitter:image" content="{{ asset('images/paper-inbox-email-toolkit.webp') }}">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     @livewireStyles
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "paperinbox",
+      "url": "https://paperinbox.io/"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://paperinbox.io/dashboard",
+      "name": "Pro Email Validator, Generator, Temp mail & AI Toolkit",
+      "description": "Access a complete suite of professional email tools. Validate, generate, temp mail and analyze emails with our powerful, real-time AI toolkit. Start with a free trial today.",
+      "isPartOf": {
+        "@id": "https://paperinbox.io/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://paperinbox.io/dashboard"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://paperinbox.io/dashboard",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://paperinbox.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Email Toolkit"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Pro Email Toolkit by paperinbox",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "A powerful, real-time AI toolkit to validate, generate, and analyze emails, including temp mail functionality.",
+      "featureList": [
+        "Real-time Email Validation",
+        "Instant Email Generation",
+        "Temporary (Temp) Mail Service",
+        "AI-Powered Technical Analysis",
+        "AI Email Content Filters",
+        "Bulk Email List Verification",
+        "Secure and Private Data Handling",
+        "99.9% Validation Accuracy"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free trial with 100 free validations per day."
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "ratingCount": "1250"
+      },
+      "url": "https://paperinbox.io/dashboard"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does the AI email validation work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our AI-powered tool performs deep syntax, domain, and SMTP checks in real-time. It uses machine learning models to detect disposable domains, catch-all servers, and other risky email addresses to ensure the highest accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the temp mail service secure and private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our temp mail service is designed for privacy. Addresses are temporary and messages are automatically deleted after a short period, protecting your primary inbox from spam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use these tools for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can get started with a free trial that includes a generous number of daily credits for our validation and analysis tools. No credit card is required to sign up."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
-    <script>tailwind.config = { theme: { extend: { colors: { primary: '#4f46e5', secondary: '#10b981' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#10b981'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         :where([class^="ri-"])::before {
             content: "\f3c2";
@@ -129,14 +278,15 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-  <x-menu />
+    <x-menu />
     <section class="relative py-20 lg:h-screen md:py-32"
         style="background-image: url('{{ asset('images/email-api-hero-image.webp') }}'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/90 to-transparent"></div>
         <div class="container mx-auto px-4 relative">
             <div class="max-w-3xl">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900 leading-tight">Professional Email Tools
-                    <span class="text-primary">for Every Need</span></h1>
+                    <span class="text-primary">for Every Need</span>
+                </h1>
                 <p class="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">Comprehensive suite of tools for email
                     validation, generation, and analysis. Enhance your email operations with our powerful, easy-to-use
                     solutions.</p>
@@ -214,7 +364,7 @@
                 <!-- Email Validator Card -->
                 @livewire('validation')
                 <!-- Email Generator Card -->
-               @livewire('generator')
+                @livewire('generator')
             </div>
         </div>
     </section>
@@ -242,7 +392,8 @@
                         <i class="ri-speed-line ri-xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Lightning Fast</h3>
-                    <p class="text-gray-600">Process thousands of emails in minutes with our optimized validation engine
+                    <p class="text-gray-600">Process thousands of emails in minutes with our optimized validation
+                        engine
                         and distributed infrastructure.</p>
                 </div>
                 <div class="text-center p-6">
@@ -259,58 +410,68 @@
     </section>
 
     <section class="py-24 bg-gradient-to-br max-w-7xl mx-auto bg-white my-10 rounded">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-20">
-            <span class="text-primary font-semibold uppercase tracking-wide">Unlock Advanced Power</span>
-            <h2 class="text-5xl font-bold text-gray-900 mt-4 mb-6">Next-Level Email Tools</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Create an account to access our premium features built for scale, speed, and serious deliverability.</p>
-        </div>
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <span class="text-primary font-semibold uppercase tracking-wide">Unlock Advanced Power</span>
+                <h2 class="text-5xl font-bold text-gray-900 mt-4 mb-6">Next-Level Email Tools</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Create an account to access our premium features
+                    built for scale, speed, and serious deliverability.</p>
+            </div>
 
-        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Card 1 -->
-            <div class="bg-white rounded-3xl shadow p-8 ">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-indigo-500 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
-                    <i class="ri-shield-check-line"></i>
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl shadow p-8 ">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary to-indigo-500 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Advanced Email Validation</h3>
+                    <p class="text-gray-600 text-center">Perform deep syntax, domain, SMTP, and inbox verification in
+                        seconds.</p>
                 </div>
-                <h3 class="text-xl font-semibold text-center mb-3">Advanced Email Validation</h3>
-                <p class="text-gray-600 text-center">Perform deep syntax, domain, SMTP, and inbox verification in seconds.</p>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white rounded-3xl shadow p-8">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-secondary to-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
-                    <i class="ri-download-2-line"></i>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl shadow p-8">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-secondary to-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
+                        <i class="ri-download-2-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Download Valid/Invalid Emails</h3>
+                    <p class="text-gray-600 text-center">Export your results in clean CSV or TXT format, instantly.</p>
                 </div>
-                <h3 class="text-xl font-semibold text-center mb-3">Download Valid/Invalid Emails</h3>
-                <p class="text-gray-600 text-center">Export your results in clean CSV or TXT format, instantly.</p>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-white rounded-3xl shadow p-8 ">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
-                    <i class="ri-send-plane-2-line"></i>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl shadow p-8 ">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
+                        <i class="ri-send-plane-2-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Send & Receive Emails</h3>
+                    <p class="text-gray-600 text-center">Test inbox placement, simulate delivery, and analyze
+                        responses.</p>
                 </div>
-                <h3 class="text-xl font-semibold text-center mb-3">Send & Receive Emails</h3>
-                <p class="text-gray-600 text-center">Test inbox placement, simulate delivery, and analyze responses.</p>
-            </div>
-            <!-- Card 4 -->
-            <div class="bg-white rounded-3xl shadow p-8 ">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
-                    <i class="ri-mail-add-line"></i>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-3xl shadow p-8 ">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-fuchsia-600 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
+                        <i class="ri-mail-add-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Generate Fake Emails</h3>
+                    <p class="text-gray-600 text-center">Instantly generate thousands of realistic email addresses for
+                        testing environments.</p>
                 </div>
-                <h3 class="text-xl font-semibold text-center mb-3">Generate Fake Emails</h3>
-                <p class="text-gray-600 text-center">Instantly generate thousands of realistic email addresses for testing environments.</p>
-            </div>
-            <!-- Card 5 -->
-            <div class="bg-white rounded-3xl shadow p-8 ">
-                <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-violet-600 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
-                    <i class="ri-database-2-line"></i>
+                <!-- Card 5 -->
+                <div class="bg-white rounded-3xl shadow p-8 ">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-violet-600 text-white rounded-full flex items-center justify-center shadow-lg text-4xl">
+                        <i class="ri-database-2-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3">Inbox Existence Check</h3>
+                    <p class="text-gray-600 text-center">Avoid bounce backs by knowing which mailboxes are actually
+                        active.</p>
                 </div>
-                <h3 class="text-xl font-semibold text-center mb-3">Inbox Existence Check</h3>
-                <p class="text-gray-600 text-center">Avoid bounce backs by knowing which mailboxes are actually active.</p>
             </div>
-        </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
 
     <section class="py-16 max-w-7xl mx-auto bg-white rounded my-10">
@@ -340,11 +501,11 @@
     </section>
     <x-footer />
     <script id="validatorToggleScript">
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const validatorModeSwitch = document.getElementById('validatorModeSwitch');
             const singleValidatorForm = document.getElementById('singleValidatorForm');
             const bulkValidatorForm = document.getElementById('bulkValidatorForm');
-            validatorModeSwitch.addEventListener('change', function () {
+            validatorModeSwitch.addEventListener('change', function() {
                 if (this.checked) {
                     singleValidatorForm.classList.add('hidden');
                     bulkValidatorForm.classList.remove('hidden');
@@ -355,12 +516,12 @@
             });
         });
     </script>
- 
- 
+
+
     <script id="smoothScrollScript">
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+                anchor.addEventListener('click', function(e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
@@ -377,7 +538,7 @@
     </script>
     @stack('scripts')
     @livewireScripts
-        
+
 </body>
 
 </html>
