@@ -31,6 +31,16 @@
         content="A comprehensive suite of tools for real-time email validation, generation, and technical analysis. Enhance your email operations with powerful, easy-to-use solutions.">
     <meta name="twitter:image" content="{{ asset('images/paper-inbox-email-toolkit.webp') }}">
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RH3KH2N5ZE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RH3KH2N5ZE');
+</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -353,7 +363,7 @@
                 </div>
             </div>
         </div>
-        <p>Login for more advance tools</p>
+       
     </section>
     <section class="py-16 max-w-7xl mx-auto ">
         <div class="container mx-auto px-4">
