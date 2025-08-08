@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - PaperInbox Email Tool</title>
+    <!-- Primary SEO -->
+    <title>About Us — PaperInbox | Email Tools that Validate, Send & Simplify Email</title>
+    <meta name="description"
+        content="PaperInbox is a small, focused team building human friendly email tools: real-time validation, inbox checks, reliable send/receive, temporary mail, templates, analytics, and more.">
+    <link rel="canonical" href="{{ route('about-us') }}" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="PaperInbox" />
+
+
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -20,6 +28,91 @@
             transition: all 0.5s ease;
         }
     </style>
+
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About PaperInbox | Email Tools that Validate, Send & Simplify Email" />
+    <meta property="og:description"
+        content="Founded in 2024, PaperInbox builds practical tools for better email: validation, deliverability, sending & receiving, temp mail, templates, and analytics." />
+    <meta property="og:url" content="{{ route('about-us') }}" />
+    <meta property="og:site_name" content="PaperInbox" />
+    <meta property="og:image" content="https://paperinbox.io/images/pages/about/team.webp" />
+    <meta property="og:image:alt" content="The PaperInbox team" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About PaperInbox — Simple, Reliable Email Tools" />
+    <meta name="twitter:description"
+        content="We make email tools that actually work — from real-time validation to dependable sending and temp mail." />
+    <meta name="twitter:image" content="https://paperinbox.io/images/pages/about/team.webp" />
+    <meta name="twitter:site" content="@PaperInbox" />
+
+    <!-- Favicons (replace with your paths) -->
+    <link rel="icon" href="https://paperinbox.io/images/favicon/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="https://paperinbox.io/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="https://paperinbox.io/images/favicon/site.webmanifest">
+
+    <!-- Breadcrumbs Schema -->
+    @verbatim
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://paperinbox.io/"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About"
+    }]
+}
+</script>
+
+        <!-- About Page + Organization Schema -->
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About PaperInbox",
+  "url": "https://paperinbox.io/about-us",
+  "description": "PaperInbox builds human-friendly email tools: validation, inbox checks, sending & receiving, temporary email, templates, analytics, and more.",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://paperinbox.io/images/pages/about/team.webp",
+    "width": 1200,
+    "height": 630
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "PaperInbox",
+    "url": "https://paperinbox.io/"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "PaperInbox",
+    "url": "https://paperinbox.io/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://paperinbox.io/paperinbox-logo.webp"
+    },
+    "foundingDate": "2024",
+    "description": "Email tools for validation, deliverability, sending/receiving, temporary mail, templates, and analytics.",
+    "sameAs": [
+      "https://twitter.com/PaperInbox",
+      "https://www.linkedin.com/company/paperinbox"
+    ]
+  }
+}
+</script>
+    @endverbatim
+
 </head>
 
 <body class="bg-white">
@@ -80,13 +173,16 @@
                         <div class="bg-blue-50 p-6 rounded-lg">
                             <h3 class="text-xl font-semibold text-gray-900 mb-3">Our Mission</h3>
                             <p class="text-gray-700">
-                               We want to make professional email tools available to everyone, not just big companies with big budgets. Our mission is to give individuals and businesses simple, reliable ways to connect, check, and improve their emails, so they can communicate with confidence and without the fuss.
+                                We want to make professional email tools available to everyone, not just big companies
+                                with big budgets. Our mission is to give individuals and businesses simple, reliable
+                                ways to connect, check, and improve their emails, so they can communicate with
+                                confidence and without the fuss.
                             </p>
                         </div>
                     </div>
                 </div>
 
-               
+
             </div>
         </div>
     </section>
@@ -108,7 +204,8 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">Email Validator</h3>
                     <p class="text-gray-600">
-                        Check email addresses instantly with up to 99.5% accuracy. Our smart validation system helps you cut down bounce rates and keep your messages landing where they belong.
+                        Check email addresses instantly with up to 99.5% accuracy. Our smart validation system helps you
+                        cut down bounce rates and keep your messages landing where they belong.
                     </p>
                 </div>
 
@@ -129,7 +226,8 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">Temporary Email Service</h3>
                     <p class="text-gray-600">
-                        Need a quick, disposable inbox? Create temporary addresses for testing, sign-ups, or private conversations, and keep your main inbox safe from clutter.
+                        Need a quick, disposable inbox? Create temporary addresses for testing, sign-ups, or private
+                        conversations, and keep your main inbox safe from clutter.
                     </p>
                 </div>
 
@@ -139,7 +237,8 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">Email Templates</h3>
                     <p class="text-gray-600">
-                        Ready-to-use templates designed for marketing campaigns, newsletters, and professional updates. Fully customizable, responsive, and mobile-friendly from the start.
+                        Ready-to-use templates designed for marketing campaigns, newsletters, and professional updates.
+                        Fully customizable, responsive, and mobile-friendly from the start.
                     </p>
                 </div>
 
@@ -149,7 +248,8 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">Fake Email Generator</h3>
                     <p class="text-gray-600">
-                        Generate realistic large number of email addresses with job title for testing, development, or QA work. Choose from a variety of domains to match real-world conditions.
+                        Generate realistic large number of email addresses with job title for testing, development, or
+                        QA work. Choose from a variety of domains to match real-world conditions.
                     </p>
                 </div>
 
@@ -206,8 +306,8 @@
                 <a href="{{ route('login') }}"
                     class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold whitespace-nowrap">
                     Start Free Trial
-            </a>
-               
+                </a>
+
             </div>
         </div>
     </section>

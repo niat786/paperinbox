@@ -31,15 +31,24 @@
         content="A comprehensive suite of tools for real-time email validation, generation, and technical analysis. Enhance your email operations with powerful, easy-to-use solutions.">
     <meta name="twitter:image" content="{{ asset('images/paper-inbox-email-toolkit.webp') }}">
 
+    <!-- Favicons (replace with your paths) -->
+    <link rel="icon" href="https://paperinbox.io/images/favicon/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="https://paperinbox.io/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="https://paperinbox.io/images/favicon/site.webmanifest">
+
+
     <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH3KH2N5ZE"></script>
-        <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH3KH2N5ZE"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-RH3KH2N5ZE');
-        </script>
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +57,7 @@
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     @livewireStyles
     @verbatim
-    <script type="application/ld+json">
+        <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -148,7 +157,7 @@
   ]
 }
 </script>
-@endverbatim
+    @endverbatim
 
     <script>
         tailwind.config = {
@@ -363,7 +372,7 @@
                 </div>
             </div>
         </div>
-       
+
     </section>
     <section class="py-16 max-w-7xl mx-auto ">
         <div class="container mx-auto px-4">
