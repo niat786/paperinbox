@@ -1,21 +1,22 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EmailController;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
 Route::get('/fake-email', [EmailController::class, 'generateFakeEmailWithJobTitle'])->name('fake-email.generate');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::get('template', function(){
+Route::get('template', function () {
     return view('template');
 });
 
@@ -56,6 +57,9 @@ Route::get('/download-fake-emails', function () {
         ->header('Content-Type', 'text/csv')
         ->header('Content-Disposition', 'attachment; filename=test-emails-paperinbox.csv');
 })->name('test-emails-paperinbox.download');
+
+
+
 
 require __DIR__.'/auth.php';
 require __DIR__.'/pages.php';

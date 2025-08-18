@@ -18,11 +18,9 @@ class UserFiles extends Component
     {
         $this->viewMode = $mode;
     }
-    
+
     public function render()
     {
         return view('livewire.tools.user-files');
     }
 }
-
-

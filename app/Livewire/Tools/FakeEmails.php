@@ -26,7 +26,7 @@ class FakeEmails extends Component
 
     public function generateBulk()
     {
-        if($this->bulkCount >= 100){
+        if ($this->bulkCount >= 100) {
             $this->bulkCount = 100;
         }
         $response = Http::get(env('API_URL').'/generate/fake-email', ['count' => $this->bulkCount]);

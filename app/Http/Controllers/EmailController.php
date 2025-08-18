@@ -6,8 +6,7 @@ use Faker\Factory as Faker;
 
 class EmailController extends Controller
 {
-
-    function generateFakeEmailWithJobTitle(?string $jobTitle = null): string
+    public function generateFakeEmailWithJobTitle(?string $jobTitle = null): string
     {
         $email = Faker::create()->email;
         $jobTitle = Faker::create()->jobTitle;

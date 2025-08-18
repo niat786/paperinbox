@@ -49,33 +49,33 @@ class Generator extends Component
     }
 
     private function fetchEmail(): array
-{
-    $url = rtrim(env('APP_URL', config('app.url')), '/') . '/api/fake-email';
-    $response = Http::timeout(5)->get($url);
+    {
+        $url = rtrim(env('APP_URL', config('app.url')), '/').'/api/fake-email';
+        $response = Http::timeout(5)->get($url);
 
-    if ($response->successful()) {
-        $data = $response->json();
+        if ($response->successful()) {
+            $data = $response->json();
 
-        $email = $data['email'] ?? 'unknown@example.com';
-        $jobTitle = $data['job_title'] ?? 'Unknown';
+            $email = $data['email'] ?? 'unknown@example.com';
+            $jobTitle = $data['job_title'] ?? 'Unknown';
+
+            return [
+                'email' => $email,
+                'title' => $jobTitle,
+            ];
+        }
+
+        // optional: log failure for debugging
+        \Log::warning('Failed to fetch fake email', [
+            'status' => $response->status(),
+            'body' => $response->body(),
+        ]);
 
         return [
-            'email' => $email,
-            'title' => $jobTitle,
+            'email' => 'unknown@example.com',
+            'title' => 'Unknown',
         ];
     }
-
-    // optional: log failure for debugging
-    \Log::warning('Failed to fetch fake email', [
-        'status' => $response->status(),
-        'body' => $response->body(),
-    ]);
-
-    return [
-        'email' => 'unknown@example.com',
-        'title' => 'Unknown',
-    ];
-}
 
     public function downloadCsv(): StreamedResponse
     {
